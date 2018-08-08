@@ -1,0 +1,57 @@
+<!DOCTYPE HTML>
+<html xmlns:th="http://www.thymeleaf.org">
+<head>
+    <title>Employee Details Submission Form</title>
+    <meta http-equiv="Content-Type" content="text/html; charset=UTF-8" />
+    <link href="http://cdn.jsdelivr.net/webjars/bootstrap/3.3.4/css/bootstrap.min.css"
+          th:href="@{/webjars/bootstrap/3.3.4/css/bootstrap.min.css}"
+          rel="stylesheet" media="screen" />
+ 
+    <script src="http://cdn.jsdelivr.net/webjars/jquery/2.1.4/jquery.min.js"
+            th:src="@{/webjars/jquery/2.1.4/jquery.min.js}"></script>
+ 
+    
+</head>
+<body>
+<div class="container">
+<div class="jumbotron">
+	<h1>Add Employee</h1>
+	</div>
+	<form action="#" th:action="@{/addEmployee}" th:object="${employee}" method="post">
+	 <div class="form-group">
+    	<label for="id">Id:</label>
+    	 <input type="text" class ="form-control" th:field="*{id}" 
+    	 placeholder="Please enter employee id" required/>
+    	</div>
+    	<div class="form-group">
+    	<label for="name">First Name:</label>
+        <input type="text" class ="form-control" th:field="*{firstName}" 
+        placeholder="Please Enter First Name" required/>
+        </div>
+        <div class="form-group">
+        <label for="name">Last Name:</label>
+        <input type="text" class="form-control" th:field="*{lastName}" 
+         placeholder="Please Enter Last Name" required/>
+        </div>
+         <div class="form-group">
+         <label for="name">Department:</label>
+         <input type="text" class="form-control" th:field="*{workDept}" 
+          placeholder="Please Enter Department" required/>
+         </div>
+         <div class="form-group">
+         <label for="name">Mobile Number:</label>
+        <input type="text" class="form-control" th:field="*{phnNumber}" 
+         placeholder="Please Enter Mobile Number" required/>
+        </div>
+        <div class="form-group">
+         <label for="name">Date Hired:</label>
+        <input type="text" class="form-control" th:field="*{hired}" 
+         placeholder="Please Enter Date Of Hired" required/>
+        </div>
+        <button type="submit" class="btn btn-success">Submit</button> <button type="reset" class="btn btn-default">Reset</button>
+    </div>
+    </form>
+        <script src="http://code.jquery.com/jquery.js"></script>
+    <script src="webjars/bootstrap/3.3.2/js/bootstrap.min.js"></script>
+</body>
+</html>

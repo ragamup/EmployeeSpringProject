@@ -1,0 +1,5 @@
+com/empinfo/project/controller/EmployeeResource.class
+com/empinfo/project/model/Employee.class
+com/empinfo/project/database/EmployeeDatabase.class
+com/empinfo/project/EmployeeDetailsApplication.class
+com/empinfo/project/service/EmployeeService.class

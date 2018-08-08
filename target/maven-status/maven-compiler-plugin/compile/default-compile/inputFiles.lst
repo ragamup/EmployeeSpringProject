@@ -1,0 +1,5 @@
+/mnt/z/EmployeeDetails/src/main/java/com/empinfo/project/database/EmployeeDatabase.java
+/mnt/z/EmployeeDetails/src/main/java/com/empinfo/project/EmployeeDetailsApplication.java
+/mnt/z/EmployeeDetails/src/main/java/com/empinfo/project/model/Employee.java
+/mnt/z/EmployeeDetails/src/main/java/com/empinfo/project/service/EmployeeService.java
+/mnt/z/EmployeeDetails/src/main/java/com/empinfo/project/controller/EmployeeResource.java
